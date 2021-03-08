@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FCC Project: Survey Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="main">
+            <h1 id="title">Inscripción a cursos de idiomas</h1>
+            <p id="description">Por favor, complete los siguientes datos para inscribirse en el ciclo lectivo 2021</p>
+            <form id="survey-form">
+                <p class="secciones-form">Datos personales</p>
+                <p class="labels"><label for="name" id="name-label">Nombre y apellido:</label></p>
+                <input id="name" type="text" placeholder="Escriba su nombre y apellido completos" required><br>
+                <p class="labels"><label for="number" id="number-label">Edad:</label></p>
+                <input type="number" id="number" min="10" max="110" placeholder="Escriba su edad"><br>
+                <p class="secciones-form">Datos de contacto</p>
+                <p class="labels"><label for="email" id="email-label">Email:</label></p>
+                <input type="email" id="email" placeholder="Escriba un email válido" required><br>
+                <p class="labels"><label for="telefono" id="telefono-label">Teléfono:</label></p>
+                <input type="number" id="telefono" placeholder="Escriba un número de teléfono" required><br>
+                <p class="secciones-form">Inscripción al curso</p>
+                <p class="labels"><label for="dropdown">Idioma:</label></p>
+                <select id="dropdown" name="idioma">
+                    <option value="seleccionar">Seleccionar idioma</option>
+                    <option value="english">Inglés</option>
+                    <option value="german">Alemán</option>
+                    <option value="italian">Italiano</option>
+                    <option value="french">Francés</option>
+                </select><br>
+                <p class="labels"><label for="horario">Horario de cursado preferido:</label></p>
+                <input type="radio" id="horario" name="turno" value="definitely"> Turno mañana - 8 a 12 hs.<br>
+                <input type="radio" id="horario" name="turno" value="maybe"> Turno tarde - 14 a 18 hs.
+                <br>
+                <input type="radio" id="horario" name="turno" value="not-sure"> Turno noche - 19 a 23 hs.<br>
+                <p class="labels"><label for="sede">Marque las sedes en las que puede cursar:</label></p>
+                <input type="checkbox" id="sede" name="sede" value="Barracas"> Barracas<br>
+                <input type="checkbox" id="sede" name="sede" value="caballito"> Caballito<br>
+                <input type="checkbox" id="sede" name="sede" value="Congreso">Congreso<br>
+                <input type="checkbox" id="sede" name="improved" value="microcentro"> Microcentro<br>
+                <input type="checkbox" id="sede" name="sede" value="palermo"> Palermo<br>
+                <input type="checkbox" id="sede" name="sede" value="san-telmo"> San Telmo<br>
+                <p class="secciones-form">Consultas o comentarios</p>
+                <textarea></textarea><br>
+                <button type="submit" id="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
